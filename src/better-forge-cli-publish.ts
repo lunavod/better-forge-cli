@@ -7,7 +7,7 @@ import path from 'path';
 
 import './util/terminate';
 import workingDir from './util/working-dir';
-import { getMakeOptions } from './electron-forge-make';
+import { getMakeOptions } from './better-forge-cli-make';
 
 (async () => {
   let dir = process.cwd();

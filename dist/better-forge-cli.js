@@ -30,7 +30,6 @@ commander_1.default
     .option('--verbose', 'Enables verbose mode')
     .command('package', 'Package the current Electron application')
     .command('make', 'Generate distributables for the current Electron application')
-    .command('start', 'Start the current Electron application')
     .command('publish', 'Publish the current Electron application to GitHub')
     .on('command:*', (commands) => {
     // eslint-disable-next-line no-underscore-dangle
@@ -53,4 +52,4 @@ Make sure you have git installed and Node.js version ${metadata.engines.node}`))
     }
     commander_1.default.parse(process.argv);
 })();
-//# sourceMappingURL=electron-forge.js.map
+//# sourceMappingURL=better-forge-cli.js.map

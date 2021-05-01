@@ -10,7 +10,7 @@ const commander_1 = __importDefault(require("commander"));
 const path_1 = __importDefault(require("path"));
 require("./util/terminate");
 const working_dir_1 = __importDefault(require("./util/working-dir"));
-const electron_forge_make_1 = require("./electron-forge-make");
+const better_forge_cli_make_1 = require("./better-forge-cli-make");
 (async () => {
     let dir = process.cwd();
     commander_1.default
@@ -32,10 +32,10 @@ const electron_forge_make_1 = require("./electron-forge-make");
     };
     if (commander_1.default.target)
         publishOpts.publishTargets = commander_1.default.target.split(',');
-    publishOpts.makeOptions = (await electron_forge_make_1.getMakeOptions())[0];
+    publishOpts.makeOptions = (await better_forge_cli_make_1.getMakeOptions())[0];
     if (commander_1.default.fromMakeResults) {
         publishOpts.makeResults = await fs_extra_1.default.readJson(commander_1.default.fromMakeResults);
     }
     await core_1.api.publish(publishOpts);
 })();
-//# sourceMappingURL=electron-forge-publish.js.map
+//# sourceMappingURL=better-forge-cli-publish.js.map

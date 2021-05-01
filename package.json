@@ -1,12 +1,12 @@
 {
   "name": "better-forge-cli",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Fork of electron-forge-cli with some changes",
   "repository": "https://github.com/electron-userland/electron-forge",
   "author": "Samuel Attard",
   "license": "MIT",
   "bin": {
-    "better-forge-cli": "dist/electron-forge.js"
+    "better-forge-cli": "dist/better-forge-cli.js"
   },
   "devDependencies": {
     "@malept/cross-spawn-promise": "^1.1.1",

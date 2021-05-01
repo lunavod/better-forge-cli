@@ -52,4 +52,4 @@ if (require.main === module || global.__LINKED_FORGE__) {
         }
     })();
 }
-//# sourceMappingURL=electron-forge-make.js.map
+//# sourceMappingURL=better-forge-cli-make.js.map

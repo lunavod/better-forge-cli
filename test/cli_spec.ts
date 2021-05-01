@@ -12,7 +12,7 @@ function tsNodePath() {
 
 function runForgeCLI(...extraArgs: string[]): Promise<string> {
   const args = [
-    path.resolve(__dirname, '../src/electron-forge.ts'),
+    path.resolve(__dirname, '../src/better-forge-cli.ts'),
     ...extraArgs,
   ];
   return spawn(tsNodePath(), args);
