@@ -30,7 +30,6 @@ program.executeSubCommand = (argv: string[], args: string[], unknown: string[]) 
 program
   .version(metadata.version)
   .option('--verbose', 'Enables verbose mode')
-  .command('package', 'Package the current Electron application')
   .command('make', 'Generate distributables for the current Electron application')
   .command('publish', 'Publish the current Electron application to GitHub')
   .on('command:*', (commands) => {
