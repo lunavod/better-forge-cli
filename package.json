@@ -1,6 +1,6 @@
 {
   "name": "better-forge-cli",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Fork of electron-forge-cli with some changes",
   "repository": "https://github.com/lunavod/better-forge-cli.git",
   "author": {
