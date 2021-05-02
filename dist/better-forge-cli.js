@@ -5,7 +5,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 require("colors");
-// @ts-ignore
 const async_ora_1 = require("@electron-forge/async-ora");
 const commander_1 = __importDefault(require("commander"));
 require("./util/terminate");

@@ -1,8 +1,8 @@
-// @ts-ignore
+
 import { api, MakeOptions } from '@electron-forge/core';
 
 import fs from 'fs-extra';
-// @ts-ignore
+
 import { initializeProxy } from '@electron/get';
 import program from 'commander';
 import path from 'path';
@@ -44,7 +44,7 @@ if (require.main === module || (global as any).__LINKED_FORGE__) {
 
     initializeProxy();
 
-    let result = await api.make(makeOpts);
+    const result = await api.make(makeOpts);
     if (writeResults) {
       await fs.writeJson(writeResults, result)
     }

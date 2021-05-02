@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import 'colors';
-// @ts-ignore
+
 import {asyncOra, OraImpl} from '@electron-forge/async-ora';
 import program from 'commander';
 

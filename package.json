@@ -7,6 +7,11 @@
     "name": "lunavod",
     "email": "lunavod@bk.ru"
   },
+  "scripts": {
+    "lint:dist": "eslint dist --no-ignore dist --no-eslintrc --config .eslintrc.dist.yml --fix --ext .js",
+    "lint": "eslint . --fix --ext .js --ext .ts",
+    "prepare": "yarn lint && tsc && yarn lint:dist"
+  },
   "license": "MIT",
   "bin": {
     "better-forge-cli": "dist/better-forge-cli.js"
@@ -17,9 +22,15 @@
     "@types/debug": "^4.1.5",
     "@types/fs-extra": "^9.0.11",
     "@types/semver": "^7.3.5",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
     "chai": "^4.3.3",
     "chai-as-promised": "^7.0.0",
-    "mocha": "^8.1.3"
+    "eslint": "^7.25.0",
+    "eslint-plugin-import": "^2.22.1",
+    "mocha": "^8.1.3",
+    "prettier": "^2.2.1",
+    "typescript": "^4.2.4"
   },
   "dependencies": {
     "@electron-forge/async-ora": "6.0.0-beta.54",

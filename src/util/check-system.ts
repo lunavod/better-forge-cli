@@ -43,7 +43,7 @@ export function validPackageManagerVersion(
   version: string,
   whitelistedVersions: string,
   ora: OraImpl,
-) {
+): boolean {
   try {
     return semver.satisfies(version, whitelistedVersions);
   } catch (e) {
